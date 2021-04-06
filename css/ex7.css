@@ -1,0 +1,17 @@
+#bloc {
+   background:#a4a4a4;
+   position:relative;
+    height:200px;
+    margin-right:200px;
+    max-width:600px;
+}
+
+#blocDroite {
+background:#ff0000;
+position:absolute;
+left:100%;
+top:0%;
+width:200px;
+height:200px;
+float:right;
+}
