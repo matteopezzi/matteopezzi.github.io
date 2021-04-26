@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ex5form</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="../css/form5.css">
+</head>
+
+<body>
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre4.html'><h4>Retour chapitre 4</h4></a>
+	<br>
+
+    <form class='contact_form' action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='post' name='contact_form' target="monIframe">
+        <ul class="cordonnes">
+            <div>Formulaire de forum</div>
+            <li>
+                <label for="l_nom"><b>Nom : </b></label>
+                <input type="text" name="nom" id="l_nom">
+            </li>
+            <li>
+                <label for="l_prenom"><b>Prenom : </b></label>
+                <input type="text" name="prenom" id="l_prenom">
+            </li>
+            <li>
+                <label for="l_email"><b>Adresse e-mail : </b></label>
+                <input type="email" name="email" id="l_email">
+            </li>
+            <li>
+                <label for="l_message"><b>Message : </b></label>
+                <br>
+                <textarea name="message" cols="31" rows="3" id="l_message" required></textarea>
+            </li>
+            <li>
+                <label for="l_image"><b>Image : </b></label>
+                <input type="file" name="image">
+            </li>
+            <li>
+                <input type="hidden" name="specialMode" value='PEZZI Matteo'>
+            </li>    
+        
+        <li>
+            <button class="validationButton" type="submit" name="envoi" value="normal" >Normal</button>
+        </li>
+        <br>
+        <br>
+        <li>
+            <button class="validationButton" type="submit" name="envoi" value="important">Important</button>
+        </li>
+        
+    </ul>
+    </form>
+    <iframe name='monIframe'></iframe>
+
+</body>
+
+</html>

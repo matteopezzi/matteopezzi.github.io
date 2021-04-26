@@ -1,0 +1,55 @@
+
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>cours formulaire</title>
+		<meta name="description" content=" ">
+		<meta name="author" content=" ">
+		<link rel="stylesheet" href="../css/form.css">
+	</head>
+
+<body>
+	<a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre4.html'><h4>Retour chapitre 4</h4></a>
+	<br>
+
+<form class='contact_form'
+	action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+	method='post'
+	name='contact_form'
+	target='_blank'>
+<ul>
+	<li>
+		<h2>Conctactez-nous</h2>
+		<span class="champ_obligatoire">*Information obligatoire</span>
+	</li>
+	<li>
+		<label for="l_nom">Nom et prénom: </label>
+		<input type="text" name="nom"
+			id="l_nom" placeholder="Arnaud RENARD" required>
+	</li>
+	<li>
+		<label for="l_email">Email : </label>
+		<input type="email" name="email" id="l_email"
+		placeholder="arenard@lecnam.net" required>
+		<span class="form_aide">Format adapté : "lenom@domaine.com"</span>
+	</li>
+	<li>
+		<label for="l_siteweb">Site Web :</label>
+		<input type="url" name="siteweb" id="l_siteweb"
+		placeholder="www.renard.com/arnaud" required>
+		<span class="form_aide">Format adapté : "http://www.ledomaine.fr"</span>
+	</li>
+	<li>
+		<label for="l_message">Message : </label>
+		<textarea name="message" cols="45" rows="5" id="l_message" required></textarea>
+	</li>
+	<li>
+		<button class="validationButton" type="submit">Envoyer</button>
+	</li>
+</ul>
+</form>
+</body>
+</html>

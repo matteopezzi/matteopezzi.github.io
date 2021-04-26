@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ex4form</title>
+    <meta name="description" content=" ">
+    <meta name="author" content=" ">
+    <link rel="stylesheet" href="../css/form4.css">
+</head>
+
+<body>
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre4.html'><h4>Retour chapitre 4</h4></a>
+	<br>
+
+    <form class='contact_form' action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='post' name='contact_form' target='_blank'>
+        <ul class="cordonnes">
+            <div>Vos coordonnées</div>
+            <li>
+                <label for="l_nom"><b>Nom : </b></label>
+                <input type="text" name="nom" id="l_nom">
+            </li>
+            <li>
+                <label for="l_prenom"><b>Prenom : </b></label>
+                <input type="text" name="prenom" id="l_prenom">
+            </li>
+            <li>
+                <label for="l_email"><b>Adresse e-mail : </b></label>
+                <input type="email" name="email" id="l_email">
+            </li>
+            <li>
+                <label for="l_verif_email"><b>Verification adresse e-mail : </b></label>
+                <input type="email" name="verif_email" id="l_verif_email">
+            </li>
+            <li>
+                <label for="l_mdp"><b>Mot de passe : </b></label>
+                <input type="text" name="mdp" id="l_mdp">
+            </li>
+            <li>
+                <label for="l_verif_mdp"><b>Verification mot de passe : </b></label>
+                <input type="text" name="verif_mdp" id="l_verif_mdp">
+            </li>
+        </ul>
+        <ul>
+            <div>Votre réservation</div>
+            <li>
+                <label for="l_chambre" class="chambre"><b>Type de chambre: </b></label>
+                <select name="chambre">
+                    <option value="1">Deux lits king size</option>
+                    <option value="2">Famille</option>
+                    <option value="3">Une personne</option>
+                </select>
+            </li>
+            <li>
+                <label for="l_vue" class="button"><b>Vue : </b></label>
+                <input type="radio" name="vue" value="Parking">Parking</input>
+                <input type="radio" name="vue" value="Jardin">Jardin</input>
+            </li>
+            <li>
+                <label for="l_option" class="button"><b>Option : </b></label>
+                <input type="checkbox" name="Parking">Parking</input>
+                <input type="checkbox" name="Petit Déjeuner">Petit Déjeuner</input>
+                <input type="checkbox" name="Accès à la piscine">Accès à la piscine</input>
+            </li>
+            <li>
+                <label for="l_demandes"><b>Demandes spéciales : </b></label>
+                <br>
+                <textarea name="message" cols="30" rows="3" id="l_message" required></textarea>
+            </li>
+        </ul>
+        <li>
+            <button class="validationButton" type="submit">Envoyer</button>
+        </li>
+
+    </form>
+
+</body>
+
+</html>

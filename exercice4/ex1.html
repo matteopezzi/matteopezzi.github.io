@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ex1form</title>
+		<meta name="description" content=" ">
+		<meta name="author" content=" ">
+		<link rel="stylesheet" href="../css/form1.css">
+	</head>
+	<body>  
+		<a href='../index.html'><h2>Accueil</h2></a>
+		<br><a href='./chapitre4.html'><h4>Retour chapitre 4</h4></a>
+		<br>
+
+		<form class='contact_form'
+		action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+		method='post'
+		name='contact_form'
+		target='_blank'>
+		<ul>
+			<li>
+				<label for="l_valeur1">Valeur 1: </label>
+				<input type="text" name="valeur1" id="l_valeur1">
+			</li>
+			<li>
+				<label for="l_operateur">Opérateur:</label>
+				<select name="number">
+					<option value="">-choisir-</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</li>
+			<li>
+				<label for="l_valeur2">Valeur 2:</label>
+				<input type="text" name="valeur2" id="l_valeur2">
+			</li>
+			<li>
+				<button class="validationButton" type="submit">Envoyer</button>
+			</li>
+		</ul>
+	</form>
+
+	</body>
+</html>
