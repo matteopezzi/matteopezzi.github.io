@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex16</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .standard{
+            width:500px;
+        }
+        .mod{font-family:Verdana;
+        text-decoration: line-through;
+        line-height:2em;
+        font-size:1.5em;
+        text-transform:capitalize;
+	
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+        Exercice 16 : Créer un rollover sur du texte ; lors du passage de la souris, le texte subira les changements suivants :
+Les évènements JQuery 20|22
+ police Verdana ;
+ un trait en travers des lettres (line-through) ;
+ une multiplication par 2 de la hauteur des lignes ;
+ une multiplication par 1,5 de la taille des caractères par rapport à la taille par défaut ;
+ une capitalisation des premières lettres des mots.
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <p class="standard">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("p").mouseenter(function () {
+                $("p").addClass("mod");
+                
+            });
+            $("p").mouseleave(function () {
+                $("p").removeClass("mod");
+            
+           });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex20</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .popin {
+            display: none;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 200px;
+            top: 200px;
+            background: #63B9D6;
+        }
+
+        .closePopin {
+            text-decoration: none;
+            color: #454545;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+Exercice 20 : Créer une pop-in qui s'ouvre lors d'un clic sur un lien. 
+-->
+<a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <div class="standard">
+        <h1>Bonjour</h1>
+        <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt
+            claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque
+            multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis
+            viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis
+            instructam mari committat.</p>
+
+        <p>Circa hos dies Lollianus primae lanuginis adulescens, Lampadi filius ex praefecto, exploratius causam
+            Maximino spectante, convictus codicem noxiarum artium nondum per aetatem firmato consilio descripsisse,
+            exulque mittendus, ut sperabatur, patris inpulsu provocavit ad principem, et iussus ad eius comitatum duci,
+            de fumo, ut aiunt, in flammam traditus Phalangio Baeticae consulari cecidit funesti carnificis manu.</p>
+
+        <p>Eius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere
+            trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas
+            Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit
+            laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
+            discessit.</p>
+            <a href='#' class='openPopin'>Ouvrir la popin</a>
+    </div>
+    <div class='popin'>
+        <div style='text-align:right'><a href='#' class='closePopin'>X</a></div>
+    </div>
+
+    <script src="./js/prof.js">
+    </script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            /*$("a").click(function(e){
+                    $(".popin").slideToggle(800);
+                    return e.preventDefault();
+                });*/
+            $('a.openPopin').click(function (e) {
+                //$(".popin").show();
+                $(".popin").slideDown();
+                return e.preventDefault();
+            });
+
+
+            $('a.closePopin').click(function (e) {
+                //$(".popin").hide();
+                $(".popin").fadeOut();
+                return e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

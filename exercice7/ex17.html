@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex17</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .normal {
+            margin: 0;
+            padding: 0;
+            /*  toglie i puntini non so perché*/
+            display: block;
+            background-image: -webkit-linear-gradient(top, #000000, #454545);
+            background-image: -moz-linear-gradient(top, #000000, #454545);
+            background-image: -ms-linear-gradient(top, #000000, #454545);
+            background-image: -o-linear-gradient(top, #000000, #454545);
+            background-image: linear-gradient(to bottom, #000000, #454545);
+            color: #ffffff;
+        }
+
+        li {
+            border-right: 1px solid #ffffff;
+            padding: 5px 15px;
+            margin: 5px 0;
+            display: inline-block;
+            /*  trasforma il menu in orizzontale  */
+        }
+
+        a {
+            color:#ffffff;
+            text-decoration:none;
+            }
+
+        .selected { /*  il prof l'ha fatto su un sito!  */
+            background: #c99399; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c99399 0%, #8c6a6b 49%, #e0868b 49%, #540d0e 50%, #3d1111 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c99399), color-stop(49%,#8c6a6b), color-stop(49%,#e0868b), color-stop(50%,#540d0e), color-stop(100%,#3d1111)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c99399 0%,#8c6a6b 49%,#e0868b 49%,#540d0e 50%,#3d1111 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c99399 0%,#8c6a6b 49%,#e0868b 49%,#540d0e 50%,#3d1111 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c99399 0%,#8c6a6b 49%,#e0868b 49%,#540d0e 50%,#3d1111 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c99399 0%,#8c6a6b 49%,#e0868b 49%,#540d0e 50%,#3d1111 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c99399', endColorstr='#3d1111',GradientType=0 ); /* IE6-9 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+Exercice 17 : Créer un menu horizontal avec un effet rollover en javascript.
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <ul class='normal'>
+        <li>Cyprum</li>
+        <li>itidem</li>
+        <li>insulam</li>
+        <li>a</li>
+        <li>continenti</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("li").mouseenter(function () {
+                $(this).addClass("selected");
+
+            });
+            $("li").mouseleave(function () {
+                $(this).removeClass("selected");
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex15</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .standard{
+            width:500px;
+        }
+        .mod{
+            width:1px;
+            margin:0 auto;
+            padding:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+Exercice 15 : Créer une page web constituée d'un court paragraphe (quelques lignes), d'une largeur de 500 pixels. En cliquant sur ce paragraphe, il doit s'afficher grosso-modo au centre de la page, avec un mot par ligne. Le double click doit permettre de revenir au format initial (aligné à gauche, occupant une largeur de 500 pixels).
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <p class="standard">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("p").click(function () {
+                $("p").addClass("mod");
+                
+            });
+            $("p").dblclick(function () {
+                $("p").removeClass("mod");
+            
+           });
+        });
+    </script>
+</body>
+
+</html>

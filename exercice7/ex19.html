@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex19</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .standard {
+            background: #04627c;
+            width: 200px;
+            color: white;
+            /* si usa per il colore del testo */
+            height: 60px;
+            /* credo sia l'altezza dell'H1 */
+            overflow: hidden;
+            /* non so a cosa serva funziona anche senza */
+            padding: 10px;
+            /* aumenta il margine sopra sembra */
+        }
+
+        .suite {
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+Exercice 19 : Créer deux boites :
+ La seconde ne s'affiche pas.
+ La première est le titre, si l'on double clic dessus,    
+-->
+<a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <div class="standard">
+        <h1>Bonjour</h1>
+        <p class="suite">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes
+            duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem
+            tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi
+            indigenis viribus.
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    /*penso che il problema sia lo script */
+    </script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("h1").dblclick(function () {
+                $(".suite").slideDown();
+            });
+            $(".suite").click(function () {
+                $(".suite").slideUp(100);
+            });
+        });
+    </script>
+</body>
+
+</html>

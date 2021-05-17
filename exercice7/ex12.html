@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex12</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+Exercice 12 : Créer un rollover sur du texte ; lors du passage de la souris, le texte est modifié.    -->
+<a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <p class="testo">ciao</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("p").mouseenter(function () {
+                $("p").html("yeee");
+            });
+            $("p").mouseleave(function () {
+                $("p").html("ciao");
+            
+           });
+        });
+    </script>
+</body>
+
+</html>

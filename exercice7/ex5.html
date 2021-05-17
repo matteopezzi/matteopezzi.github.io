@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex5</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+       
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+    Ecrivez une page contenant un div, un bouton, et un textarea.
+Lorsque l’on clique sur le bouton, le contenu du textarea est copié 
+dans le div et le contenu du textarea est effacé.
+Indications :
+- Pour récupérer la valeur d’un text area : $("textarea").val() ;
+- Pour changer le contenu d’un div : $("div").html("new content") ;
+- Pour copier l’un dans l’autre : $("div").html( $("textarea").val() ) ;
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <img class="1" src="../images/soleil.png" alt="soleil">
+    <img class="2" src="../images/nuage.png" alt="nuage">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("img.1").click(function () {
+                $("img.1").hide();
+                $("img.2").show(); 
+            });
+            $("img.2").click(function () {
+                $("img.2").hide();
+                $("img.1").show(); 
+            });
+        });
+    </script>
+</body>
+
+</html>

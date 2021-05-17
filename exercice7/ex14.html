@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex14</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+        .red{
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM
+        Exercice 14 : Créer une page web comportant une phrase, dont un groupe de mots, de couleur noire au chargement, doit prendre la couleur :
+ rouge (#ff0000) au passage de la souris ;
+ vert (#009900) en réponse à un click ;
+ bleu (#0000ff) en réponse à un double click.
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <p>prima frase non colorata</p>
+    <p class="red">frase rossa</p>
+    <p>terza frase non colorata<p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(".red").css("color","#009900");
+            });
+            $("p").dblclick(function () {
+                $(".red").css("color","#0000ff");
+            
+           });
+        });
+    </script>
+</body>
+
+</html>

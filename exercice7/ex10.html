@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>c7ex10</title>
+    <style>
+        img {
+            border: 3px solid #ffffff;
+            margin: 1px 3px;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- mettre ici le HTLM
+   Exercice 10 : Reprenez l’exemple 1 pour que seule l’image sur laquelle on vient de cliquer soit affublée d’une bordure (c.a.d. que l’on retire la bordure des autres)
+    -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+    <img src="../images/point.jpg" alt="point">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("img").click(function() {
+                $("img").css("border","0px");
+                $(this).css("border","3px solid red");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

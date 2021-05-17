@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>c7ex2</title>
+    <meta name="description" content="The HTML5 and JQuery basic page">
+    <meta name="author" content="Arnaud Renard">
+    <style>
+        /* mettre ici le CSS */
+    </style>
+</head>
+
+<body>
+    <!-- mettre ici le HTLM -->
+    <a href='../index.html'><h2>Accueil</h2></a>
+	<br><a href='./chapitre7.html'><h4>Retour chapitre 7</h4></a>
+	<br>
+    <table>
+        <tr>
+            <th>0
+            </th>
+            <th>1
+            </th>
+            <th>2
+            </th>
+        </tr>
+        <tr>
+            <th>3
+            </th>
+            <th>4
+            </th>
+            <th>5
+            </th>
+        </tr>
+        <tr>
+            <th>6
+            </th>
+            <th>7
+            </th>
+            <th>8
+            </th>
+        </tr>
+    </table>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // mettre ici le Javascript
+        $(document).ready(function () {
+            $("tr:odd").css({ "backgroundColor": "red" });
+        });
+    </script>
+</body>
+
+</html>
